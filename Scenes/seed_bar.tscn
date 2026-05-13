@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bfmdglfr6k0iq"]
+
+[ext_resource type="Texture2D" uid="uid://pn62c7cnrvib" path="res://Assets/Phase 2/TD-SeedBar.png" id="1_xlw4k"]
+
+[node name="Seed-Bar" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(86.5, 521.25)
+scale = Vector2(0.6892431, 0.9995206)
+texture = ExtResource("1_xlw4k")

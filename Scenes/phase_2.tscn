@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://b2pjrl6iuws6x"]
+
+[ext_resource type="Texture2D" uid="uid://cite5lmyllqyl" path="res://Assets/Phase 2/TD-Grid.png" id="1_557bc"]
+[ext_resource type="Texture2D" uid="uid://bn8w3mper1xg8" path="res://Assets/Phase 2/TD-Dirt.png" id="1_d628u"]
+[ext_resource type="PackedScene" uid="uid://bijn6o8xw0mdb" path="res://Scenes/attack-plant.tscn" id="2_d32x3"]
+[ext_resource type="PackedScene" uid="uid://ciayq3jq1daes" path="res://Scenes/zombie.tscn" id="3_d628u"]
+[ext_resource type="PackedScene" uid="uid://bfmdglfr6k0iq" path="res://Scenes/seed_bar.tscn" id="3_wfy0e"]
+
+[node name="Phase 2" type="Node2D"]
+
+[node name="Background Assets" type="CanvasLayer" parent="."]
+layer = -10
+
+[node name="Dirt" type="Sprite2D" parent="Background Assets"]
+position = Vector2(960, 540)
+texture = ExtResource("1_d628u")
+metadata/_edit_lock_ = true
+
+[node name="Background Lawn" type="Sprite2D" parent="Background Assets"]
+position = Vector2(1037, 540)
+scale = Vector2(0.8229167, 0.8229167)
+texture = ExtResource("1_557bc")
+metadata/_edit_lock_ = true
+
+[node name="Seed-Bar" parent="Background Assets" instance=ExtResource("3_wfy0e")]
+position = Vector2(5, 17)
+
+[node name="Attack-Plant" parent="." instance=ExtResource("2_d32x3")]
+position = Vector2(284, 102)
+
+[node name="Zombie" parent="." instance=ExtResource("3_d628u")]
+position = Vector2(1695, 32)

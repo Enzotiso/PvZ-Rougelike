@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://ciayq3jq1daes"]
+
+[ext_resource type="Texture2D" uid="uid://dlutg07hpduux" path="res://Assets/Phase 2/TD-Zombie.png" id="1_h3kin"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h3kin"]
+size = Vector2(100, 218)
+
+[node name="Zombie" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(50, 109)
+shape = SubResource("RectangleShape2D_h3kin")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(50, 109)
+scale = Vector2(1, 1.4533334)
+texture = ExtResource("1_h3kin")
