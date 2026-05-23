@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhq5mhgydynbi"]
+
+[ext_resource type="Script" uid="uid://b7700tir6hmkc" path="res://Scripts/lawn_collision.gd" id="1_tg5pu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0xxbk"]
+size = Vector2(174, 176)
+
+[node name="Lawn_Collision" type="Node2D"]
+script = ExtResource("1_tg5pu")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+input_pickable = true
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -88)
+shape = SubResource("RectangleShape2D_0xxbk")
+metadata/_edit_lock_ = true
+
+[node name="Marker2DPlacement" type="Marker2D" parent="."]
+position = Vector2(0, -20)
+metadata/_edit_lock_ = true
+
+[connection signal="mouse_shape_entered" from="StaticBody2D" to="." method="_on_static_body_2d_mouse_shape_entered"]
+[connection signal="mouse_shape_exited" from="StaticBody2D" to="." method="_on_static_body_2d_mouse_shape_exited"]

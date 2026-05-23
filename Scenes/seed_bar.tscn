@@ -1,10 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://bfmdglfr6k0iq"]
+[gd_scene load_steps=3 format=3 uid="uid://bfmdglfr6k0iq"]
 
+[ext_resource type="Script" uid="uid://du0v032i5fwgl" path="res://Scripts/seed_bar.gd" id="1_ro8uu"]
 [ext_resource type="Texture2D" uid="uid://pn62c7cnrvib" path="res://Assets/Phase 2/TD-SeedBar.png" id="1_xlw4k"]
 
-[node name="Seed-Bar" type="Node2D"]
+[node name="seed_bar" type="Node2D"]
+script = ExtResource("1_ro8uu")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(86.5, 521.25)
-scale = Vector2(0.6892431, 0.9995206)
+position = Vector2(97, 521.25)
+scale = Vector2(0.77290833, 0.9995206)
 texture = ExtResource("1_xlw4k")
+
+[node name="Marker2DSeedslot1" type="Marker2D" parent="Sprite2D"]
+position = Vector2(-115, -516)

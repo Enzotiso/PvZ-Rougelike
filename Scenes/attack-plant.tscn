@@ -17,3 +17,6 @@ position = Vector2(100, 44)
 position = Vector2(50, 67)
 target_position = Vector2(2000, 0)
 collide_with_areas = true
+
+[node name="Marker2DPlacement" type="Marker2D" parent="."]
+position = Vector2(50, 150)

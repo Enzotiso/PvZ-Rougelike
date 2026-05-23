@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://da8aadx8oesji"]
+
+[ext_resource type="Script" uid="uid://c5ten6ir3r15b" path="res://Scripts/seed_packet.gd" id="1_hht7m"]
+
+[node name="seed_packet" type="Node2D"]
+script = ExtResource("1_hht7m")
+
+[node name="ButtonSeedpacket" type="Button" parent="."]
+offset_right = 168.73009
+offset_bottom = 94.0
+scale = Vector2(1.0015997, 1)
+
+[node name="Polygon2DSeedpacket" type="Polygon2D" parent="ButtonSeedpacket"]
+scale = Vector2(1.0965743, 1.0965743)
+polygon = PackedVector2Array(0, 0, 154, 0, 154, 86, 0, 86)
+
+[connection signal="button_up" from="ButtonSeedpacket" to="." method="_on_button_seedpacket_button_up"]
