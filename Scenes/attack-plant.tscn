@@ -7,16 +7,13 @@
 script = ExtResource("1_d42wl")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(50, 75)
+position = Vector2(0, -75)
 texture = ExtResource("1_3du1y")
 
 [node name="Marker2D" type="Marker2D" parent="."]
-position = Vector2(100, 44)
+position = Vector2(50, -106)
 
 [node name="RayCastRight" type="RayCast2D" parent="."]
-position = Vector2(50, 67)
+position = Vector2(0, -83)
 target_position = Vector2(2000, 0)
 collide_with_areas = true
-
-[node name="Marker2DPlacement" type="Marker2D" parent="."]
-position = Vector2(50, 150)

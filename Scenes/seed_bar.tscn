@@ -13,3 +13,5 @@ texture = ExtResource("1_xlw4k")
 
 [node name="Marker2DSeedslot1" type="Marker2D" parent="Sprite2D"]
 position = Vector2(-115, -516)
+
+[node name="Seed_Packets" type="Node" parent="."]

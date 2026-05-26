@@ -44,11 +44,32 @@ scale = Vector2(1.2151898, 1.2151898)
 position = Vector2(-854.27844, 539.5443)
 scale = Vector2(1.2151898, 1.2151898)
 
+[node name="Lawn_Collision2x1" parent="Background Assets/Background Lawn" instance=ExtResource("3_gtpho")]
+position = Vector2(-640.40485, -325.67084)
+scale = Vector2(1.2151898, 1.2151898)
+
+[node name="Lawn_Collision2x2" parent="Background Assets/Background Lawn" instance=ExtResource("3_gtpho")]
+position = Vector2(-640.40497, -109.36719)
+scale = Vector2(1.2151898, 1.2151898)
+
+[node name="Lawn_Collision2x3" parent="Background Assets/Background Lawn" instance=ExtResource("3_gtpho")]
+position = Vector2(-640.40485, 106.93677)
+scale = Vector2(1.2151898, 1.2151898)
+
+[node name="Lawn_Collision2x4" parent="Background Assets/Background Lawn" instance=ExtResource("3_gtpho")]
+position = Vector2(-640.40485, 322.0253)
+scale = Vector2(1.2151898, 1.2151898)
+
+[node name="Lawn_Collision2x5" parent="Background Assets/Background Lawn" instance=ExtResource("3_gtpho")]
+position = Vector2(-640.40497, 539.5443)
+scale = Vector2(1.2151898, 1.2151898)
+
 [node name="Seed_Bar" parent="Background Assets" instance=ExtResource("3_wfy0e")]
 position = Vector2(5, 17)
 
 [node name="Attack_Plant" parent="." instance=ExtResource("2_d32x3")]
-position = Vector2(284, 102)
+visible = false
+position = Vector2(334, 252)
 
 [node name="Zombie" parent="." instance=ExtResource("3_d628u")]
 position = Vector2(1695, 32)
