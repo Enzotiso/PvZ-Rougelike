@@ -4,8 +4,6 @@ extends Node2D
 const Seedpacket = preload("res://Scenes/seed_packet.tscn")
 
 
-
-
 # Remake this function when you recreate the seed packet selection menu
 func populateSeedBar():
 	var new_instance = Seedpacket.instantiate()

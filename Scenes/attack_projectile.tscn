@@ -7,6 +7,8 @@
 size = Vector2(48, 47)
 
 [node name="attack-projectile" type="Node2D"]
+z_index = 100
+y_sort_enabled = true
 script = ExtResource("1_mw3y4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -15,6 +17,7 @@ scale = Vector2(0.48000002, 0.31333336)
 texture = ExtResource("1_v5tla")
 
 [node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("RectangleShape2D_v5tla")

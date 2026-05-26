@@ -3,6 +3,7 @@ extends Node2D
 var attack_projectile = preload("res://Scenes/attack_projectile.tscn")
 
 var offCooldown = true
+var held = true
 
 # Spawns the Projectiles the plant shoots
 func spawn_projectile():
@@ -22,6 +23,6 @@ func cooldown():
 		# Then have the same for the row the enemies are spawned in so even if lower enemy sprites overlap
 		# It still only activates for enemies in that specific row	
 func _process(delta: float) -> void:
-	if $RayCastRight.is_colliding() and offCooldown:	# Detects if enemy is in path of plant, then fires at it
+	if $RayCastRight.is_colliding() and offCooldown and !held:	# Detects if enemy is in path of plant, then fires at it
 		spawn_projectile()
 		cooldown()

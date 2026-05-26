@@ -10,4 +10,4 @@ func _ready() -> void:
 
 # signals that the button was pressed to controller_plantPlacement
 func _on_button_seedpacket_button_up() -> void:
-	seedpacket_pressed.emit(plant_scene)
+	seedpacket_pressed.emit(plant_scene, self)

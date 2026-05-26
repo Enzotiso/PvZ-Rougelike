@@ -1,4 +1,6 @@
 extends Node2D
+#for bullets to appear over plants
+#Y Sort Enabled under ordering & set z Index to 100
 
 # Sets speed of this projectile
 @export var speed := 400.0
